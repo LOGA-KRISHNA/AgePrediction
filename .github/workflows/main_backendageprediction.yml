@@ -73,4 +73,4 @@ jobs:
         with:
           app-name: 'backendAgePrediction'
           slot-name: 'Production'
-          package: backend
+          package: backend-app/backend
