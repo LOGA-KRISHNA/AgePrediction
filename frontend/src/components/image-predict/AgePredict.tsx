@@ -111,7 +111,7 @@ export default function AgePredictionApp() {
     setServerImgSize(null);
 
     try {
-      const res = await fetch("https://ambitious-sea-036463d00.1.azurestaticapps.net/predict/image", {
+      const res = await fetch("https://backendageprediction-d2avfxcff4d0e7h3.centralindia-01.azurewebsites.net/predict/image", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ image: base64 }),

@@ -191,7 +191,7 @@ export default function VoicePredictionApp() {
       }
       const audioBase64 = await blobToBase64(wavBlob);
 
-      const response = await fetch("https://ambitious-sea-036463d00.1.azurestaticapps.net/predict/voice", {
+      const response = await fetch("https://backendageprediction-d2avfxcff4d0e7h3.centralindia-01.azurewebsites.net/predict/voice", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ audio: audioBase64 }),
