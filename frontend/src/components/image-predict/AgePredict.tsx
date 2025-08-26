@@ -111,7 +111,7 @@ export default function AgePredictionApp() {
     setServerImgSize(null);
 
     try {
-      const res = await fetch("https://backendageprediction-d2avfxcff4d0e7h3.centralindia-01.azurewebsites.net/predict/image", {
+      const res = await fetch("http://127.0.0.1:8000/predict/image", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ image: base64 }),
@@ -201,8 +201,10 @@ export default function AgePredictionApp() {
 
   /* -------- UI -------- */
   return (
-    <div   id="services" className="min-h-screen bg-[#d5effd] flex flex-col items-center p-6">
-      <h1 className="text-3xl font-bold mb-6 text-indigo-700">Age Prediction AI</h1>
+   
+    <div id="services" className="bg-[#d5effd] flex flex-col items-center p-6 rounded-2xl shadow-lg w-full">
+      
+      <h1 className="text-3xl font-bold mb-6 text-indigo-700">Face Age Analyzer</h1>
 
       {/* Upload Section */}
       <div className="bg-white shadow-md rounded-xl p-6 mb-6 w-full max-w-md text-center">

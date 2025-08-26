@@ -10,6 +10,7 @@ const links = [
  
 ];
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +18,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-600">Age Predictor</div>
+        <div className="text-2xl font-extrabold bg-gradient-to-r from-[#39387d] to-[#F5A524] bg-clip-text text-transparent">Age Predictor</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">

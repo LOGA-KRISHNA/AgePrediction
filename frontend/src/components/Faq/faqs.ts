@@ -7,7 +7,7 @@ export interface FAQ {
 
 const faqs: FAQ[] = [
   {
-    title: "Examples",
+    title: "What does this platform do?",
     content:
       "This platform uses AI to analyze images and predict attributes such as age. It’s designed to be simple, interactive, and user-friendly.",
   },
@@ -27,9 +27,9 @@ const faqs: FAQ[] = [
       "No, uploaded images are processed locally in your browser session. Nothing is stored or shared on external servers.",
   },
   {
-    title: "How can I share my feedback?",
+    title: "Is the audio output gives numbers or categories?",
     content:
-      "After completing a prediction, you’ll be presented with a feedback panel where you can quickly share your thoughts.",
+      "Output is based on Category, Whether the Person Belongs to UnderAge(below 18) or Adult (20-30) or Middle-Age(Above 30)",
   },
 ];
 

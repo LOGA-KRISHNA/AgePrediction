@@ -2,40 +2,50 @@ import { Button } from "@heroui/react";
 
 export default function Banner() {
   return (
-    <section className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl shadow-lg overflow-hidden">
+    // bg-gradient-to-r from-blue-600 to-indigo-700
+    <section className="w-full text-white rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-700 shadow-lg overflow-hidden"> 
       <div className="mx-auto max-w-7xl px-6 py-6 lg:flex lg:items-center lg:justify-between lg:gap-12">
         
         {/* Left Content */}
         <div className="flex-1">
           <h1 className="text-4xl font-bold sm:text-5xl lg:text-6xl">
-            Predict Age with AI 🚀
+            Predict Your Age with  <span className="text-yellow-200">AI 🚀</span>
           </h1>
           <p className="mt-6 text-lg text-blue-100 max-w-xl">
-            Upload a photo and let our AI model predict age instantly. 
-            Built with React, TailwindCSS, and HeroUI.
+        Upload a photo and let our AI model predict your age with high accuracy. Powered by deep learning and advanced computer vision. You can also speak, 
+        and our AI will analyze your voice patterns to estimate your age
+
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <Button
+            {/* <Button
               as="a"
-              href="#get-started"
+              href="#services"
               size="lg"
               color="primary"
               radius="lg"
               className="font-semibold"
             >
-              Get Started
-            </Button>
+              Try Using Face
+            </Button> */}
             <Button
-              as="a"
-              href="#learn-more"
-              size="lg"
-              variant="bordered"
-              radius="lg"
-              className="text-white border-white font-semibold"
-            >
-              Learn More
-            </Button>
+            as="a"
+        href="#services"
+          style={{ backgroundColor: "#F31260", color: "white" }}
+          size="md"
+          radius="full"
+          className="text-md px-4 py-2 rounded-full"
+        >Try Using Face</Button>
+         <Button
+         as="a"
+        href="#try"
+          style={{ backgroundColor: "#00002e", color: "white" }}
+          size="md"
+          radius="full"
+          className="text-md px-4 py-2 rounded-full"
+        >Try Using 
+        voice</Button>
+           
           </div>
         </div>
 
@@ -51,3 +61,13 @@ export default function Banner() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+

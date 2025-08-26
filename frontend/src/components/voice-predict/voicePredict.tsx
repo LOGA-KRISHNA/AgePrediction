@@ -191,7 +191,7 @@ export default function VoicePredictionApp() {
       }
       const audioBase64 = await blobToBase64(wavBlob);
 
-      const response = await fetch("https://backendageprediction-d2avfxcff4d0e7h3.centralindia-01.azurewebsites.net/predict/voice", {
+      const response = await fetch("http://localhost:8000/predict/voice", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ audio: audioBase64 }),
@@ -228,10 +228,10 @@ export default function VoicePredictionApp() {
   }, [audioUrl]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#fbf6ef] p-6 font-sans">
-      <div className="max-w-2xl w-full bg-white shadow-lg rounded-xl p-6">
+    <div id="try" className="flex items-center justify-center bg-[#fbf6ef] p-6 rounded-2xl shadow-lg w-full">
+    <div className="max-w-2xl w-full bg-white shadow-lg rounded-xl p-6">
         <h1 className="text-3xl font-bold text-center text-sky-700 mb-6">
-          Voice Age Prediction AI
+          Voice Age Analyzer
         </h1>
 
         {/* Upload or Record */}
