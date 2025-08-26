@@ -27,7 +27,7 @@ export default function App() {
           <Hero />
       <section className="w-full px-6 py-3 pt-2 mt-3 bg-white">
         <h2 className="text-3xl font-bold text-center mt-3 mb-1 text-[#39387d]">
-          How It Works
+          How It Works With ai modelling
         </h2>
 
         <FeatureSection />
