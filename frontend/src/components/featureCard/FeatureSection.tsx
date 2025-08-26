@@ -51,7 +51,6 @@ const featuresCategories: FeatureCategory[] = [
     bgColor: "bg-[beige]",
   },
 ];
-
 function FeatureCard({
   title,
   icon,
@@ -64,16 +63,21 @@ function FeatureCard({
   bgColor: string;
 }) {
   return (
-    <div className={`p-6 rounded-2xl shadow-md ${bgColor}`}>
+    <div className={`p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ease-in-out backdrop-blur-sm border border-white/20 hover:border-white/40 ${bgColor} group cursor-pointer`}>
      
       <div className="flex items-center gap-3 mb-4">
-        {icon}
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <div className="transform group-hover:scale-110 transition-transform duration-300 text-purple-600">
+          {icon}
+        </div>
+        <h3 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent group-hover:from-purple-500 group-hover:to-pink-500 transition-all duration-300">
+          {title}
+        </h3>
       </div>
-      <ul className="space-y-2 text-gray-700">
+      <ul className="space-y-3 text-gray-700">
         {descriptions.map((desc, index) => (
-          <li key={index} className="text-sm">
-            • {desc}
+          <li key={index} className="text-sm flex items-start gap-2 transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300" style={{ transitionDelay: `${index * 50}ms` }}>
+            <span className="text-purple-500 font-bold text-xs mt-1 flex-shrink-0">●</span>
+            <span className="leading-relaxed">{desc}</span>
           </li>
         ))}
       </ul>
