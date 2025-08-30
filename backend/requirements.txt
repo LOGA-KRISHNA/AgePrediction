@@ -17,3 +17,4 @@ pydub==0.25.1
 av==11.0.0
 mutagen==1.47.0
 opencv-python-headless
+scikit-learn==1.6.1
