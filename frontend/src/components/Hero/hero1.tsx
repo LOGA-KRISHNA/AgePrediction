@@ -45,7 +45,7 @@ export default function Hero(){
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-10"
         >
-          Experience cutting-edge <span className="font-semibold text-purple-600">EfficientNet  & SVM</span> technology 
+          Experience cutting-edge <span className="font-semibold text-purple-600">EfficientNet  & Classical Neural Network</span> technology 
           that predicts age with remarkable accuracy. Our advanced preprocessing ensures 
           <span className="font-semibold text-blue-600"> minimal error rates</span> across diverse applications.
         </motion.p>
